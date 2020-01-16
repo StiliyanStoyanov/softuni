@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XmlHttpRequest Example</title>
+    <!--<script src="scripts/1.xhr.js"></script>-->
+</head>
+<body>
+<button onclick="loadRepos()">Load Repos</button>
+<div id="res"></div>
+<script>
+    function loadRepos() {
+        let request = new XMLHttpRequest();
+        let method = 'GET';
+        let url = 'https://api.github.com/users/testnakov/repos';
+        request.onreadystatechange = function () {
+            if (request.readyState === 4 && request.status === 200) {
+                console.log(request.responseText);
+                document.getElementById("res").textContent = request.responseText
+            }
+        };
+        request.open(method, url, true);
+        request.send();
+    }
+</script>
+</body>
+</html>
