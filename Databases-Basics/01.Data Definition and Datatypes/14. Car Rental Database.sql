@@ -1,0 +1,19 @@
+CREATE DATABASE CarRental
+GO
+
+CREATE TABLE Categories (
+	CategoriesId INT IDENTITY NOT NULL,
+	CategoryName NVARCHAR(50),
+	DailyRate DECIMAL(15, 2) CHECK (DailyRate >= 0),
+	CONSTRAINT PK_Categories PRIMARY KEY (CategoriesId),
+	CarsId INT FOREIGN KEY REFERENCES Cars(CarsId)
+)
+GO
+
+CREATE TABLE Cars (
+	CarsId INT IDENTITY,
+	PlateNumber VARCHAR(50) UNIQUE NOT NULL,
+	Manufacturer VARCHAR(50),
+	Model VARCHAR(50),
+	CONSTRAINT PK_Cars PRIMARY KEY(CarsId)
+)
