@@ -1,0 +1,34 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: relative;
+}
+
+
+input[type=text], select, textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+@media screen and (max-width: 600px) {
+    label {
+
+    }
+    input[type=text], select, textarea {
+
+    }
+}
