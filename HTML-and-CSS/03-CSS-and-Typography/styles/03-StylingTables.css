@@ -1,0 +1,24 @@
+table, td, th {
+    border: 1px solid #dddddd;
+    padding: 5px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-size: 20px
+}
+td, th {
+    width: 300px;
+}
+th {
+    background-color: #dddddd;
+    text-align: left;
+}
+table tr:nth-child(even) td {
+    background: #f9f9f9;
+}
+table tr:nth-child(odd) td {
+    background: #f1f1f1;
+}
+table tr:hover td {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}

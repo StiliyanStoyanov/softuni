@@ -1,0 +1,19 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+a:hover {
+    cursor: pointer;
+    box-shadow: 0 0 3pt 2pt #9ecaed;
+}
+a.buttonStar {
+    color: white;
+    background-color: #006600;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+a.buttonEmail{
+    color: white;
+    background-color: #ffa72d;
+    padding: 5px;
+    border-radius: 2px;
+}
