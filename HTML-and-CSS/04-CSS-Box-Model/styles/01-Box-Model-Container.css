@@ -1,0 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+p {
+    width: 200px;
+    padding: 5px;
+    margin: auto;
+    background-color: #40E0D0;
+    border: 5px solid black;
+    border-radius: 10px;
+
+}
