@@ -43,6 +43,7 @@ table tr:hover td {
 }
 
 blockquote {
-    border-left: rgb(221, 221, 221);
+    border-left: 1px  solid gray;
     font-style: italic;
+    padding-left: 15px;
 }
