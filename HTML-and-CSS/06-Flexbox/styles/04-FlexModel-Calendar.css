@@ -1,0 +1,65 @@
+html {
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+div.container, section {
+    display: flex;
+    flex-flow: wrap;
+    white-space: nowrap;
+    max-width: 65vw;
+    text-align: center;
+    margin: 5% auto;
+}
+div.container span {
+    border: 1px solid black;
+}
+section.week {
+    width: 75%;
+}
+section.notes {
+    flex-direction: column;
+    width: 25%;
+}
+section.notes span.note {
+    padding: 10px 0 0 0;
+    min-height: 20vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+section.week > span.header {
+    padding: 10px 0 0 0;
+    width: 100%;
+}
+section.week > span.weekday {
+    padding: 10px 0 0 0;
+    width: 20%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+section.week > span.weekend {
+    padding: 10px 0 0 0;
+    width: 50%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    div.container, section {
+        max-width: 90vw;
+    }
+}
+
+
+
+

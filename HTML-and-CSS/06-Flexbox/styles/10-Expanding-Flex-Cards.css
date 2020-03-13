@@ -1,0 +1,119 @@
+@import 'https://use.fontawesome.com/releases/v5.12.1/css/all.css';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.blue {
+    color: #5D9CEC;
+}
+.green {
+    color: #478056;
+}
+body {
+    background-color: #eeeeee;
+    padding: 0;
+    margin: 0;
+}
+section.container {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+ul.options {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    align-items:stretch;
+    min-width:600px;
+    max-width:900px;
+    height:400px;
+}
+li.option {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    border-radius:40px;
+    max-width:600px;
+}
+li.option.active {
+    /* grows a little bit when becoming active */
+    margin: 0;
+}
+li.option:not(.active) {
+    border-radius: 30px;
+    min-width: 70px;
+    max-width: 80px;
+}
+div.icon {
+    /* icon container setup */
+    color: orange;
+    font-size: 22px;
+    z-index: 1;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    background: white;
+    left: 5%;
+    bottom: 7%;
+}
+li.option:not(.active) div.icon {
+    /* center icon in non active list item containing the img */
+    transition: .5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%);
+}
+div.info {
+    /* text next to icon setup */
+    font-size: 24px;
+    font-weight: bold;
+    background: transparent;
+    position: absolute;
+    white-space: nowrap;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    bottom: 8.5%;
+    left: 15%;
+    color: white;
+}
+li.option:not(.active) div.info {
+    /* hides text when window is not active */
+    display: none;
+}
+div.icon i {
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+li.option > img {
+    /* setup to fill the container if the image is smaller*/
+    position: relative;
+    z-index: -1;
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    /* text-overflows under the icon on smaller sizes fix */
+    li.option.active div.info {
+        left: 22%;
+    }
+    section.option {
+        width: 100%;
+    }
+}
