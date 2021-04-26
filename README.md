@@ -20,4 +20,5 @@
 |<a href="https://softuni.bg/trainings/2452/js-back-end-september-2019" > JS Back-end </a> | <a href="https://softuni.bg/certificates/details/72492/0d3b6dba"> Link </a> |
 |<a href="https://softuni.bg/trainings/2570/reactjs-october-2019" > ReactJS </a> | <a href="https://softuni.bg/certificates/details/75510/8c8a6588"> Link </a> |
 |<a href="https://softuni.bg/trainings/2784/html-and-css-february-2020"> HTML & CSS </a> | <a href="https://softuni.bg/certificates/details/78774/fa4370ae"> Link </a> |
-|<div>JS Web Developer</div> | <a href="https://softuni.bg/certificates/details/76167/abdbe1cd"> Link </a> |
+
+<a href="https://softuni.bg/certificates/details/76167/abdbe1cd"> JS Web Developer Diploma </a>
