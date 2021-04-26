@@ -8,7 +8,7 @@
 
 <h2> Certificates </h2>
 
-|**Course**|**Link**| 
+|**Course**|**Certificate**| 
 |---|---|
 |<a href="https://softuni.bg/trainings/1770/programming-basics-with-csharp-october-2017/" > Programming Basics </a> | <a href="https://softuni.bg/certificates/details/49977/d0426622"> Link </a> |
 |<a href="https://softuni.bg/trainings/1786/programming-fundamentals-january-2018" > Programming Fundamentals </a> | <a href="https://softuni.bg/certificates/details/54378/154c1eea"> Link </a> |
