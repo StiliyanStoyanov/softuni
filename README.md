@@ -1,11 +1,6 @@
 <a name="certificates" href="https://softuni.bg/" rel="Courses">  ![SoftUni logo][logo] <a/>
 
-[logo]: http://innovationstarterbox.bg/wp-content/uploads/2016/05/Softuni_logo_trasparent.png "Logo Title Text 2"
-
-<br/>
-<br/>
-<br/>
-
+[logo]: https://github.com/StiliyanStoyanov/softuni/blob/master/softuni-logo.png "Link"
 <h2> Certificates </h2>
 
 |**Course**|**Certificate**| 
